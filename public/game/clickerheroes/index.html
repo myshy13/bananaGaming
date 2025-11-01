@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html><script src="index_files/js"></script><script>
+(() => {
+/**
+ * This script injected by the installed three.js developer
+ * tools extension.
+ * https://github.com/threejs/three-devtools
+ */
+
+const $devtoolsReady = Symbol('devtoolsReady');
+const $backlog = Symbol('backlog');
+
+// The __THREE_DEVTOOLS__ target is small and light-weight, and collects
+// events triggered until the devtools panel is ready, which is when
+// the events are flushed.
+const target = new class ThreeDevToolsTarget extends EventTarget {
+  constructor() {
+    super();
+    this[$devtoolsReady] = false;
+    this[$backlog] = [];
+    this.addEventListener('devtools-ready', e => {
+      this[$devtoolsReady] = true;
+      for (let event of this[$backlog]) {
+        this.dispatchEvent(event);
+      }
+    }, { once: true });
+  }
+
+  dispatchEvent(event) {
+    if (this[$devtoolsReady] || event.type === 'devtools-ready') {
+      super.dispatchEvent(event);
+    } else {
+      this[$backlog].push(event);
+    }
+  }
+}
+
+Object.defineProperty(window, '__THREE_DEVTOOLS__', {
+  value: target,
+});
+})();
+</script><link type="text/css" id="dark-mode" rel="stylesheet" href=""><style type="text/css" id="dark-mode-custom-style"></style><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Clicker Heroes Unblocked - ubg235 GC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="generator" content="Construct 3">
+<meta name="author" content="frank">
+<link rel="manifest" href="https://ubg98.github.io/ClickerHeroes/appmanifest.json">
+<link rel="apple-touch-icon" sizes="128x128" href="https://ubg98.github.io/ClickerHeroes/icons/icon-128.png">
+<link rel="apple-touch-icon" sizes="256x256" href="https://ubg98.github.io/ClickerHeroes/icons/icon-256.png">
+<link rel="apple-touch-icon" sizes="512x512" href="https://ubg98.github.io/ClickerHeroes/icons/icon-512.png">
+<link rel="icon" type="image/png" href="https://ubg98.github.io/ClickerHeroes/icons/icon-512.png">
+<link rel="stylesheet" href="index_files/style.css">
+<meta name="description" content="Clicker Heroes, Clicker Heroes Unblocked, Clicker Heroes Cool Math, Clicker Heroes Friv Games">
+<style>
+	.flex{display:flex;}
+
+
+
+</style><script src="index_files/c3runtime.js"></script></head>
+
+<body style="overflow:hidden;">
+<div id="fb-root"></div>
+<script src="index_files/lodash.custom.min.js"></script>
+<script src="index_files/tween.js"></script>
+<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+		</div>
+	</noscript>
+<script src="index_files/supportcheck.js"></script>
+<script src="index_files/offlineclient.js"></script>
+<script src="index_files/main.js"></script><canvas style="width: 1454px; height: 816px; margin-left: 0px; margin-top: 31px;" width="2908" height="1632"></canvas>
+<script src="index_files/register-sw.js"></script>
+<script>
+
+		function Showloading() {
+			let Loading = document.getElementById("content-loading");
+			Loading.style.display = "block";
+		}
+		function Hideloading() {
+			let Loading = document.getElementById("content-loading");
+			Loading.style.display = "none";
+		}
+	</script>	
+<div id="content-loading" style="display: none;">
+<div class="flex">Loading...</div>
+<div class="flex">
+<div class="dash uno"></div>
+<div class="dash dos"></div>
+<div class="dash tres"></div>
+<div class="dash cuatro"></div>
+</div>
+</div>
+  <script src="index_files/analytics_ubg_v1_4.js"></script>
+  
+
+<textarea style="resize: none; position: absolute; display: none;" autocomplete="off" placeholder="Paste data here..." title="" spellcheck="false"></textarea></body></html>
