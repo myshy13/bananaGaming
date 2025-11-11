@@ -9,6 +9,7 @@
   height: 100%;
   filter: blur(3px);
 }
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -16,14 +17,17 @@ body {
   position: relative;
   min-height: 100vh;
 }
+
 .navbar a {
   color: #fff;
   text-decoration: none;
   margin: 0 1rem;
 }
+
 .navbar a:hover {
   text-decoration: underline;
 }
+
 .navbar ul {
   list-style: none;
   display: flex;
