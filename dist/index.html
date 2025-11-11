@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" crossorigin href="./assets/index-BOFLI7NM.css">
+  </head>
+
+  <body>
+    <div class="background"></div>
+    <nav class="navbar">
+      <div class="nav-header">
+        <h1>Home</h1>
+      </div>
+      <ul class="nav-links x-scrollable">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="./game/cookieclicker/index.html">cookie clicker</a>
+        </li>
+        <li>
+          <a href="./game/angrygran2/index.html">angry gran 2</a>
+        </li>
+        <li>
+          <a href="./game/asmallworldcup/index.html">a small world cup</a>
+        </li>
+        <li>
+          <a href="./game/clickerheroes/index.html">elastic man</a>
+        </li>
+        <li>
+          <a href="./game/hardestgame/index.html">world's hardest game</a>
+        </li>
+        <li>
+          <a href="./game/impossiblequiz/index.html"
+            >the impossible quiz</a
+          >
+        </li>
+        <li>
+          <a href="./game/jellytruck/index.html">jelly truck</a>
+        </li>
+        <li>
+          <a href="./game/mariokart/index.html">mario kart</a>
+        </li>
+        <li>
+          <a href="./game/minecraft/index.html">minecraft</a>
+        </li>
+        <li>
+          <a href="./game/miniputt/index.html">mini golf</a>
+        </li>
+        <li>
+          <a href="./game/mrmine/index.html">mrmine</a>
+        </li>
+        <li>
+          <a href="./game/oppositeday/index.html">opposite day</a>
+        </li>
+        <li>
+          <a href="./game/pacman/index.html">pacman</a>
+        </li>
+        <li>
+          <a href="./game/papasfreezeria/index.html">papas freezeria</a>
+        </li>
+        <li>
+          <a href="./game/papashotdogs/index.html">papas hotdogs</a>
+        </li>
+        <li>
+          <a href="./game/papaspizzeria/index.html">papas pizzeria</a>
+        </li>
+        <li>
+          <a href="./game/paperio/index.html">paper io</a>
+        </li>
+        <li>
+          <a href="./game/run3/index.html">run 3</a>
+        </li>
+        <li>
+          <a href="./game/slope/index.html">slope</a>
+        </li>
+        <li>
+          <a href="./game/slope3/index.html">slope3</a>
+        </li>
+        <li>
+          <a href="./game/tetris/index.html">tetris</a>
+        </li>
+        <li>
+          <a href="./game/tiny fishing/index.html">tiny fishing</a>
+        </li>
+
+        <li class="nav-arrow">
+          <button
+            type="button"
+            class="scroll-btn left"
+            aria-label="Scroll left"
+            style="
+              height: 2em;
+              width: 2em;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: none;
+              background: #fff;
+              border-radius: 50%;
+              box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+              padding: 6px;
+              cursor: pointer;
+            "
+            onclick="(function(e){const ul=e.target.closest('ul'); if(!ul) return; ul.scrollBy({left:-300,behavior:'smooth'});})(event)"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+        </li>
+        <li class="nav-arrow">
+          <button
+            type="button"
+            class="scroll-btn right"
+            aria-label="Scroll right"
+            style="
+              height: 2em;
+              width: 2em;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: none;
+              background: #fff;
+              border-radius: 50%;
+              box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+              padding: 6px;
+              cursor: pointer;
+            "
+            onclick="(function(e){const ul=e.target.closest('ul'); if(!ul) return; ul.scrollBy({left:300,behavior:'smooth'});})(event)"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="games" id="games"></div>
+    <script>
+      const games = [
+        {
+          name: "cookie clicker",
+          path: "./game/cookieclicker/index.html",
+          logoSrc: "./game/cookieclicker/logo.png",
+        },
+        {
+          name: "angry gran 2",
+          path: "./game/angrygran2/index.html",
+          logoSrc: "./game/angrygran2/logo.webp",
+        },
+        {
+          name: "a small world cup",
+          path: "./game/asmallworldcup/index.html",
+          logoSrc: "./game/asmallworldcup/logo.webp",
+        },
+        {
+          name: "elastic man",
+          path: "./game/elasticman/index.html",
+          logoSrc: "./game/elasticman/logo.webp",
+        },
+        {
+          name: "world's hardest game",
+          path: "./game/hardestgame/index.html",
+          logoSrc: "./game/hardestgame/logo.jpg",
+        },
+        {
+          name: "the impossible quiz",
+          path: "./game/impossiblequiz/index.html",
+          logoSrc: "./game/impossiblequiz/logo.png",
+        },
+        {
+          name: "jelly truck",
+          path: "./game/jellytruck/index.html",
+          logoSrc: "./game/jellytruck/logo.jpg",
+        },
+        {
+          name: "mario kart",
+          path: "./game/mariokart/index.html",
+          logoSrc: "./game/mariokart/logo.jpeg",
+        },
+        {
+          name: "minecraft",
+          path: "./game/minecraft/index.html",
+          logoSrc: "./game/minecraft/logo.png",
+        },
+        {
+          name: "mini golf",
+          path: "./game/miniputt/index.html",
+          logoSrc: "./game/miniputt/logo.jpg",
+        },
+        {
+          name: "mrmine",
+          path: "./game/mrmine/index.html",
+          logoSrc: "./game/mrmine/logo.webp",
+        },
+        {
+          name: "opposite day",
+          path: "./game/oppositeday/index.html",
+          logoSrc: "./game/oppositeday/logo.webp",
+        },
+        {
+          name: "pacman",
+          path: "./game/pacman/index.html",
+          logoSrc: "./game/pacman/logo.png",
+        },
+        {
+          name: "papas freezeria",
+          path: "./game/papasfreezieria/index.html",
+          logoSrc: "./game/papasfreezieria/logo.webp",
+        },
+        {
+          name: "papas hotdogs",
+          path: "./game/papashotdogs/index.html",
+          logoSrc: "./game/papashotdogs/logo.jpg",
+        },
+        {
+          name: "papas pizzeria",
+          path: "./game/papaspizzeria/index.html",
+          logoSrc: "./game/papaspizzeria/logo.webp",
+        },
+        {
+          name: "paper io",
+          path: "./game/paperio/index.html",
+          logoSrc: "./game/paperio/logo.webp",
+        },
+        {
+          name: "run 3",
+          path: "./game/run3/index.html",
+          logoSrc: "./game/run3/logo.png",
+        },
+        {
+          name: "slope",
+          path: "./game/slope/index.html",
+          logoSrc: "./game/slope/logo.jpg",
+        },
+        {
+          name: "slope3",
+          path: "./game/slope3/index.html",
+          logoSrc: "./game/slope3/logo.webp",
+        },
+        {
+          name: "tetris",
+          path: "./game/tetris/index.html",
+          logoSrc: "./game/tetris/logo.webp",
+        },
+        {
+          name: "tiny fishing",
+          path: "./game/tinyFishing/index.html",
+          logoSrc: "./game/tinyFishing/logo.jpg",
+        },
+      ];
+
+      games.forEach((element) => {
+        const gamesDiv = document.getElementById("games");
+        const gameButton = document.createElement("a");
+        const gameLogo = document.createElement("img");
+        const gameLabel = document.createElement("h4");
+        gameLogo.src = element.logoSrc;
+        gameButton.className = "game";
+        gameButton.href = element.path;
+        gameButton.style.textDecoration = "none";
+        gameButton.style.color = "white";
+        gameLogo.style.borderRadius = "12px";
+        gameLabel.textContent = element.name;
+        gameButton.appendChild(gameLogo);
+        gameButton.appendChild(gameLabel);
+        gamesDiv.appendChild(gameButton);
+      });
+    </script>
+    <script>
+      window.addEventListener("scroll", () => {
+        const r = document.querySelector(".right");
+        r.style.bottom = `${window.scrollY + 878}px`;
+        const l = document.querySelector(".left");
+        l.style.bottom = `${window.scrollY + 878}px`;
+      });
+    </script>
+  </body>
+</html>
